@@ -51,7 +51,7 @@ llm = HuggingFaceLLM(
     model_name="meta-llama/Llama-2-7b-chat-hf",
     device_map="auto",
     # uncomment this if using CUDA to reduce memory usage
-    model_kwargs={"torch_dtype": torch.float16 , "load_in_8bit":True}
+    #model_kwargs={"torch_dtype": torch.float16 , "load_in_8bit":True}
 )
 
 embed_model=LangchainEmbedding(
