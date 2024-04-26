@@ -3,3 +3,11 @@ llama-index
 llama-index-llms-openai
 nltk
 pypdf
+sentence_transformers
+transformers==4.37
+einops
+accelerate
+langchain
+bitsandbytes
+llama-index-llms-huggingface
+llama-index-embeddings-langchain
