@@ -7,12 +7,14 @@ from llama_index.core.prompts.prompts import SimpleInputPrompt
 from langchain.embeddings.huggingface import HuggingFaceEmbeddings
 from llama_index.core import ServiceContext
 from llama_index.embeddings.langchain import LangchainEmbedding
+
 from huggingface_hub import login
 
 
 access_token_read = "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"
 access_token_write = "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"
 login(token = access_token_read)
+
 
 try:
   from llama_index import VectorStoreIndex, ServiceContext, Document, SimpleDirectoryReader
